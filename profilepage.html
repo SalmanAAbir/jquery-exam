@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>profilepage</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- jquery ui cdn css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+		
+		<style type="text/css">
+
+  .im{
+  	margin-top:20px; 
+  }
+
+  	.im img{
+  		width: 100%;
+
+  	}
+
+  	.bg3{
+  		background-color: green;
+  	}
+
+  	.bg2{
+  		background-color: coral;
+  	}
+
+  	.bg1{
+  		background-color: red;
+  	}
+  	.parallax-window {
+    min-height: 600px;
+    background: transparent;
+}
+  </style>
+
+
+</head>
+<body>
+
+<div class="main">
+<div class="slider">
+	
+	<div class="container">
+		<div class="row">
+			<div class="butt col-md-12">
+				<button id="all">All</button>
+				<button id="tr">tree</button>
+				<button id="na">nature</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="im col-md-4 fu">
+				<img src="1.jpg">
+			</div>
+			<div class="im col-md-4 de">
+				<img src="2.jpg">
+				
+			</div>
+			<div class="im col-md-4 fu">
+				<img src="3.jpg">
+				
+			</div>
+			<div class="im col-md-4 de">
+				<img src="4.jpg">
+				
+			</div>
+			<div class="im col-md-4 fu">
+				<img src="5.jpg">
+				
+			</div>
+			<div class="im col-md-4 de">
+				<img src="6.jpg">
+				
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+<div class="container" >
+	
+		<div class="col-md-12" style="text-align: center;" >
+			
+
+				<textarea id="te" style=" border-radius: 10px;"  cols="30" rows="5" placeholder="input text"></textarea>
+
+			<p id="cnt">160</p>
+
+		</div>
+
+</div>
+
+<div class="para">
+	<div class="parallax-window" data-parallax="scroll" data-image-src="3.jpg"></div>
+</div>
+ <br>
+ <br>
+ <br>
+
+<div class="bg">
+	<button id="cbg">Background</button>
+</div>
+
+
+
+<div class="container">
+	<div class="datepic">
+		<label>Date</label>
+		<input type="text" name="" id="date">
+	</div>
+</div>
+
+
+
+<div class="tabuu">
+		
+		<div id="tabs">
+			  <ul>
+			    <li><a href="#tabs-1">Nunc tincidunt</a></li>
+			    <li><a href="#tabs-2">Proin dolor</a></li>
+			    <li><a href="#tabs-3">Aenean lacinia</a></li>
+			  </ul>
+			  <div id="tabs-1">
+			    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet </p>
+			  </div>
+			  <div id="tabs-2">
+			    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. </p>
+			  </div>
+			  <div id="tabs-3">
+			    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora .</p>
+			  </div>
+			</div>
+	</div>
+
+</div>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- jquery ui CDN -->
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+  <script src="parallax.min.js"></script>
+
+  <script type="text/javascript" src="profile.js"></script>
+
+
+  <script type="text/javascript">
+  	$('.parallax-window').parallax();
+  	$( "#tabs" ).tabs();
+  </script>
+<!-- jquery library end -->
+</body>
+</html>
